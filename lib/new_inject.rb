@@ -1,6 +1,6 @@
 class Array
 
-	def new_inject(argument=0, &block)
+	def new_inject(argument=0)
 		result = 0
 		counter = 0
 		if block_given? 
