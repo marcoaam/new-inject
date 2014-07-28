@@ -6,6 +6,7 @@ class Array
 		if block_given? 
 			acummulator = self.first if argument == 0
 			acummulator = argument
+			acummulator = self.first if self.first.is_a?(String)
 			self.each do | item |
 	  		acummulator = yield(acummulator, item)
 	  	end
